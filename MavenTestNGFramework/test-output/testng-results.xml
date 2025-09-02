@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-09-01T22:31:04 IST" name="Suite" finished-at="2025-09-01T22:31:17 IST" duration-ms="13045">
+    <groups>
+    </groups>
+    <test started-at="2025-09-01T22:31:04 IST" name="Test" finished-at="2025-09-01T22:31:17 IST" duration-ms="13045">
+      <class name="com.test.SelectDropdown">
+        <test-method is-config="true" signature="Initialization()[pri:0, instance:com.test.SelectDropdown@385c9627]" started-at="2025-09-01T22:31:10 IST" name="Initialization" finished-at="2025-09-01T22:31:13 IST" duration-ms="2925" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Initialization -->
+        <test-method signature="Test3()[pri:0, instance:com.test.SelectDropdown@385c9627]" started-at="2025-09-01T22:31:13 IST" name="Test3" finished-at="2025-09-01T22:31:14 IST" duration-ms="489" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test3 -->
+        <test-method signature="Test1()[pri:1, instance:com.test.SelectDropdown@385c9627]" started-at="2025-09-01T22:31:14 IST" name="Test1" finished-at="2025-09-01T22:31:14 IST" duration-ms="434" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test1 -->
+        <test-method signature="Test2()[pri:2, instance:com.test.SelectDropdown@385c9627]" started-at="2025-09-01T22:31:14 IST" name="Test2" finished-at="2025-09-01T22:31:16 IST" duration-ms="2148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test2 -->
+        <test-method is-config="true" signature="closure()[pri:0, instance:com.test.SelectDropdown@385c9627]" started-at="2025-09-01T22:31:16 IST" name="closure" finished-at="2025-09-01T22:31:17 IST" duration-ms="224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closure -->
+      </class> <!-- com.test.SelectDropdown -->
+      <class name="com.test.DragAndDrop">
+        <test-method is-config="true" signature="Initialization()[pri:0, instance:com.test.DragAndDrop@2f4948e4]" started-at="2025-09-01T22:31:04 IST" name="Initialization" finished-at="2025-09-01T22:31:10 IST" duration-ms="5868" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Initialization -->
+        <test-method signature="dragAnddrop()[pri:0, instance:com.test.DragAndDrop@2f4948e4]" started-at="2025-09-01T22:31:10 IST" name="dragAnddrop" finished-at="2025-09-01T22:31:10 IST" duration-ms="660" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dragAnddrop -->
+        <test-method is-config="true" signature="closure()[pri:0, instance:com.test.DragAndDrop@2f4948e4]" started-at="2025-09-01T22:31:10 IST" name="closure" finished-at="2025-09-01T22:31:10 IST" duration-ms="217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closure -->
+      </class> <!-- com.test.DragAndDrop -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
