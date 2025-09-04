@@ -1,6 +1,10 @@
 package com.test;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.List;
+import java.util.Properties;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -14,26 +18,14 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class SelectDropdown {
-	
-	WebDriver driver;
-	
-	@BeforeClass
-	public void Initialization()
-	{
-        driver = new ChromeDriver();
-		
-		driver.get("https://www.amazon.in/");
-		
-		driver.manage().window().maximize();
-	}
+public class SelectDropdown extends SetUp {
 
 	@Test(priority=1)
 	public void Test1()
 	{
 		
 		
-		WebElement dropdown = driver.findElement(By.id("searchDropdownBox"));
+		WebElement dropdown = driver.findElement(By.id(prop.getProperty("DropdownBoxID")));
 		
 		Select sel = new Select(dropdown);
 		
@@ -41,7 +33,7 @@ public class SelectDropdown {
 		
 		sel.selectByValue("search-alias=freshmeat");
 		
-		sel.selectByVisibleText("Garden & Outdoors");
+		sel.selectByVisibleText(prop.getProperty("Garden"));
 		
 
 	}
@@ -50,7 +42,7 @@ public class SelectDropdown {
 	public void Test2()
 	{
 		
-		WebElement dropdown = driver.findElement(By.id("searchDropdownBox"));
+		WebElement dropdown = driver.findElement(By.id(prop.getProperty("DropdownBoxID")));
 		
 		Select sel = new Select(dropdown);
 		
@@ -81,10 +73,6 @@ public class SelectDropdown {
 		}
 	}
 	
-	@AfterClass
-	public void closure()
-	{
-		driver.quit();
-	}
+
 
 }
