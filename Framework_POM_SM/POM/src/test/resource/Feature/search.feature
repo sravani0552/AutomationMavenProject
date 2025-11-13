@@ -25,3 +25,5 @@ Feature: Amazon Search
     When I click on Your Account in Accounts dropdown
     Then I should land on Accounts page
 
+    Scenario: Check whether user navigates to Books page
+
