@@ -1,0 +1,32 @@
+package pages;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
+
+public class HomePage extends BasePage {
+
+	public HomePage(WebDriver driver) {
+		super(driver);
+		// TODO Auto-generated constructor stub
+	}
+	
+	public void SearchFor(String Keyword)
+	{
+		getElement("SearchBox").sendKeys(Keyword);
+		getElement("SearchButton").click();
+	}
+
+    public String SelectCategory()
+    {
+      WebElement Category = getElement("CategoryDropdown");
+      
+      Category.click();
+      
+      Select sel = new Select(Category);
+      sel.selectByVisibleText("Baby");
+      
+      return getElement("SelectedCategory").getText();
+    }
+
+}

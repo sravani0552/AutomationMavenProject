@@ -1,0 +1,12 @@
+{
+	"DepartureFrom":{
+		"type":"id",
+		"value":"twotabsearchtextbox"
+	},
+	
+	"GoingTo":{
+		"type":"xpath",
+		"value":"//input[@value='Go']"
+		
+	}
+}

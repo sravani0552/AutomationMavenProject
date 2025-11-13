@@ -1,0 +1,42 @@
+package pages;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
+
+public class HomePage extends BasePage {
+
+	public HomePage(WebDriver driver) {
+		super(driver);
+		// TODO Auto-generated constructor stub
+	}
+	
+	public void SearchFor(String Keyword)
+	{
+		getElement("SearchBox").sendKeys(Keyword);
+		getElement("SearchButton").click();
+	}
+
+    public String SelectCategory(String Categoryvalue)
+    {
+      WebElement Category = getElement("CategoryDropdown");
+      
+      Select sel = new Select(Category);
+      sel.selectByVisibleText(Categoryvalue);
+      
+      return getElement("SelectedCategory").getText();
+    }
+    
+    public String AccountsPage()
+    {
+    	WebElement SignIn = getElement("SignIn");
+    	Actions act = new Actions(driver);
+    	act.moveToElement(SignIn).perform();
+    	
+    	getElement("YourAccount").click();
+    	
+    	return getElement("AccountsPage").getText();
+    }
+
+}

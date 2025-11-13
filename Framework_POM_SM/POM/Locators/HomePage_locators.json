@@ -1,0 +1,39 @@
+{
+	"SearchBox":{
+		"type":"id",
+		"value":"twotabsearchtextbox"
+	},
+	
+	"SearchButton":{
+		"type":"xpath",
+		"value":"//input[@value='Go']"
+		
+	},
+	"SearchHeader":{
+		"type":"xpath",
+		"value":"//span[@class='a-color-state a-text-bold']"
+			
+	},
+    "CategoryDropdown":{
+    	"type":"id",
+    	"value":"searchDropdownBox"
+    },
+  
+    "SelectedCategory":{
+      	"type":"xpath",
+      	"value":"//span[@id='nav-search-label-id']"
+	},
+	"SignIn":{
+		"type":"xpath",
+		"value":"//span[contains(text(),'Lists')]"
+	},
+	"YourAccount":{
+			"type":"xpath",
+			"value":"//span[text()='Your Account']"
+		},
+	"AccountsPage":{
+					"type":"xpath",
+					"value":"//div[@class='a-row a-spacing-base']"
+			}
+	
+}

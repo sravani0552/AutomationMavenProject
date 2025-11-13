@@ -1,0 +1,37 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import utility.LocatorReader;
+
+public class BasePage {
+	
+	public WebDriver driver;
+	
+	public LocatorReader locatorreader;
+	
+	public BasePage(WebDriver driver)
+	{
+		this.driver = driver;
+		this.locatorreader = new LocatorReader("Locators/HomePage_locators.json");
+	}
+
+	
+	public WebElement getElement(String key)
+	
+	{
+		String type = locatorreader.getLocatorType(key);
+		String value = locatorreader.getLocatorValue(key);
+		
+		switch(type)
+		{
+		case "id": return driver.findElement(By.id(value));
+		case "xpath": return driver.findElement(By.xpath(value));
+		case "css": return driver.findElement(By.cssSelector(value));
+		case "name": return driver.findElement(By.name(value));
+		default: throw new IllegalArgumentException("Unsupported locator type");
+		}
+	}
+}

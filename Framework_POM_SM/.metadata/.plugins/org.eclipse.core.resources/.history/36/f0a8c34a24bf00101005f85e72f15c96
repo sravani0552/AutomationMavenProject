@@ -1,0 +1,23 @@
+{
+	"SearchBox":{
+		"type":"id",
+		"value":"twotabsearchtextbox"
+	},
+	
+	"SearchButton":{
+		"type":"xpath",
+		"value":"//input[@value='Go']"
+		
+	},
+	"SearchHeader":{
+			"type":"xpath",
+			"value":"//span[@class='a-color-state a-text-bold']"
+			
+		},
+  "CategoryDropdown":{
+    "type":"id",
+    "value":"searchDropdownBox"
+
+  }
+
+}
